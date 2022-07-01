@@ -42,24 +42,25 @@ class CrearPersona {
           event.preventDefault();
             let xhr = new XMLHttpRequest();  
             let persona = {};
-            persona.tipoDoc = $("#tipodoc").val();
-            persona.documento = $("#documentos").val();
-            persona.nombres = $("#nombres").val();
-            persona.apellidos = $("#apellidos").val();
-            persona.sexo = $("#sexo").val();
-            persona.departamento = $("#departamento").val();
-            persona.municipio = $("#municipio").val();
-            persona.email = $("#email").val();
-            persona.clave = $("#clave").val();
+            persona.tipoDocumento1 = $("#tipodoc").val();
+            persona.documento1 = $("#documentos").val();
+            persona.nombres1 = $("#nombres").val();
+            persona.apellidos1 = $("#apellidos").val();
+            persona.sexo1 = $("#sexo").val();
+            persona.departamento1 = $("#departamento").val();
+            persona.municipio1 = $("#municipio").val();
+            persona.email1 = $("#email").val();
+            persona.contrasena1 = $("#clave").val();           
+            //let data = JSON.stringify(user);
             //let data =JSON.stringify({"tipodocumento1": tipoDoc, "documento1": documento, "nombres1":nombres,"apellidos1":apellidos,"sexo1":sexo, "departamento1":departamento,"municipio1":municipio,"email1":email,"contrasena1":clave});
             //let envio = JSON.parse(data);
             let envio = JSON.stringify(persona);
             xhr.open('POST', 'http://localhost/APISICONPrueba/api/CreaPersona');
             xhr.send(envio);
             xhr.onload = function() {
-            if (xhr.status == 200) {  
+            if (xhr.status == 201) {  
               alert("Se registro correctamente persona");
-             
+              window.location.reload();
             } else { 
                alert("Error al registrar persona");
               
