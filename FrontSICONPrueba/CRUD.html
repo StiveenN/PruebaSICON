@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">  
+  <head>    
+    <title>Prueba SICON</title>    
+    <meta charset="UTF-8">
+    <meta name="title" content="Prueba SICON">  
+    <link href="./style/sicon.css" rel="stylesheet">     
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+     <script src="./js/CrearPersona.js"></script> 
+     
+  </head>    
+  <body>
+    <div id="form-Crear">   
+      <div class="container">        
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container-fluid">
+    <a class="navbar-brand" href="#">Prueba SICON</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">CRUD Persona</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reporte</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+ </nav>  
+    <div class="container">
+      <div id="form-Crear" class="row justify-content-center align-items-center">
+        <div id="form-Crear" class="col-md-12">
+            <div id="form-Crear" class="col-md-12">
+                <form id="formCrear" class="form" action="" method="post">
+                    <h3 class="text-center text-info">Crear Persona</h3>
+                    <div class="col-md-9 col-sm-9 col-xs-12 form-group">
+                        <label>Tipo Documento </label>
+                        <select class="form-control required" name="tipodoc"  id="tipodoc" required>
+                        </select>
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12 form-group">
+                        <label>Documento</label>            
+                        <input type="text" class="form-control" name="documentos" id="documentos" required>
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12 form-group">
+                        <label>Nombres</label>            
+                        <input type="text" class="form-control" name="nombres" id="nombres" required>
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12 form-group">
+                        <label>Apellidos</label>            
+                        <input type="text" class="form-control" name="apellidos" id="apellidos" required>
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12 form-group">
+                        <label>Sexo </label>
+                        <select class="form-control required" name="sexo" id="sexo" required>
+                        </select>
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12 form-group">
+                        <label>Departamento </label>
+                        <select class="form-control required" name="departamento" id="departamento" required>
+                        </select>
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12 form-group">
+                        <label>Municipio </label>
+                        <select class="form-control required"  name="municipio" id="municipio" required>
+                        </select>
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12 form-group">
+                        <label>Email</label>            
+                        <input type="text" class="form-control" name="email" id="email" required>
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12 form-group">
+                        <label>Contraseña</label>            
+                        <input type="text" class="form-control" name="clave" id="clave" required>
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12 form-group">
+                        <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                            <button class="btn btn-primary" type="reset">Nuevo</button>
+                            <button class="btn btn-success" id="GuardarPersona">Guadar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>  
+      </div>
+    </div>
+</div> 
+</body> 
+</html>
